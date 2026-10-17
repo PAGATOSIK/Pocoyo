@@ -1,0 +1,11 @@
+{
+  "providers": [
+    {
+      "type": "ttf",
+      "file": "pocou:sf-pro-text-11.ttf",
+      "shift": [0, 0],
+      "size": 11,
+      "oversample": 2.0
+    }
+  ]
+}
