@@ -35,7 +35,7 @@
 Before installing, make sure you have the following installed:
 
 * **Minecraft Java Edition** (`1.21.8`)
-* **Fabric Loader** (`0.16.x` or newer)
+* **Fabric Loader** (`0.18.4`)
 * **Java Development Kit (JDK 21)** (Required for building from source)
 
 ---
