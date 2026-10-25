@@ -21,4 +21,14 @@ public class Render2D {
         drawRect(context, x, y + thickness, thickness, height - (thickness * 2), color); // Лево
         drawRect(context, x + width - thickness, y + thickness, thickness, height - (thickness * 2), color); // Право
     }
+
+    public static void drawGradientRect(DrawContext context, float x, float y, float width, float height, int color1, int color2) {
+        int x1 = (int) x;
+        int y1 = (int) y;
+        int x2 = (int) (x + width);
+        int y2 = (int) (y + height);
+
+        // Draw horizontal gradient
+        context.fillGradient(x1, y1, x2, y2, color1, color2);
+    }
 }

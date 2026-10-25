@@ -8,6 +8,7 @@ import java.util.List;
 public abstract class Module {
     private final String name;
     private final Category category;
+    private final String description;
     private int key;
     private boolean toggled;
     private final List<Setting> settings = new ArrayList<>();
@@ -15,6 +16,13 @@ public abstract class Module {
     public Module(String name, Category category) {
         this.name = name;
         this.category = category;
+        this.description = "No description";
+    }
+
+    public Module(String name, Category category, String description) {
+        this.name = name;
+        this.category = category;
+        this.description = description;
     }
 
     public void addSettings(Setting... settings) {
@@ -44,6 +52,7 @@ public abstract class Module {
 
     public String getName() { return name; }
     public Category getCategory() { return category; }
+    public String getDescription() { return description; }
     public int getKey() { return key; }
     public void setKey(int key) { this.key = key; }
     public boolean isToggled() { return toggled; }

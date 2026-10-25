@@ -1,6 +1,7 @@
 
 package main.client.modules.visual;
 
+import main.client.PocoyoVisual;
 import main.client.module.Category;
 import main.client.module.Module;
 import main.client.setting.NumberSetting;
@@ -26,7 +27,7 @@ import java.util.List;
 public class JumpCircle extends Module {
 
     private static final Identifier CIRCLE_TEXTURE =
-            Identifier.of("pocou", "textures/circle.png");
+            Identifier.of("pocou", "texture/circle.png");
 
     private final NumberSetting size =
             new NumberSetting("Size", 1.5, 0.5, 3.0, 0.1);
@@ -40,7 +41,7 @@ public class JumpCircle extends Module {
     private boolean initialized = false;
 
     public JumpCircle() {
-        super("JumpCircle", Category.VISUAL);
+        super("JumpCircle", Category.VISUAL, "создает круг при прыжке");
         addSettings(size, duration);
     }
 
@@ -122,12 +123,18 @@ public class JumpCircle extends Module {
                 RenderLayer.getEntityTranslucent(CIRCLE_TEXTURE)
         );
 
+        int effectColor = PocoyoVisual.INSTANCE.getThemeManager().getEffectColor();
+        int r = (effectColor >> 16) & 0xFF;
+        int g = (effectColor >> 8) & 0xFF;
+        int b = effectColor & 0xFF;
+
         for (CircleEffect circle : circles) {
             circle.render(
                     matrices,
                     buffer,
                     cameraPos,
-                    partialTicks
+                    partialTicks,
+                    r, g, b
             );
         }
     }
@@ -170,7 +177,8 @@ public class JumpCircle extends Module {
                 MatrixStack matrices,
                 VertexConsumer buffer,
                 Vec3d cameraPos,
-                float partialTicks
+                float partialTicks,
+                int r, int g, int b
         ) {
             float progress = MathHelper.clamp(
                     1.0f - (life - partialTicks) / (float) maxLife,
@@ -221,25 +229,25 @@ public class JumpCircle extends Module {
             drawVertex(
                     buffer, matrix,
                     -0.5f, -0.5f, 0.0f,
-                    0.0f, 1.0f, alphaInt
+                    0.0f, 1.0f, r, g, b, alphaInt
             );
 
             drawVertex(
                     buffer, matrix,
                     0.5f, -0.5f, 0.0f,
-                    1.0f, 1.0f, alphaInt
+                    1.0f, 1.0f, r, g, b, alphaInt
             );
 
             drawVertex(
                     buffer, matrix,
                     0.5f, 0.5f, 0.0f,
-                    1.0f, 0.0f, alphaInt
+                    1.0f, 0.0f, r, g, b, alphaInt
             );
 
             drawVertex(
                     buffer, matrix,
                     -0.5f, 0.5f, 0.0f,
-                    0.0f, 0.0f, alphaInt
+                    0.0f, 0.0f, r, g, b, alphaInt
             );
 
             matrices.pop();
@@ -253,10 +261,11 @@ public class JumpCircle extends Module {
                 float z,
                 float u,
                 float v,
+                int r, int g, int b,
                 int alpha
         ) {
             buffer.vertex(matrix, x, y, z)
-                    .color(255, 255, 255, alpha)
+                    .color(r, g, b, alpha)
                     .texture(u, v)
                     .overlay(OverlayTexture.DEFAULT_UV)
                     .light(0xF000F0)

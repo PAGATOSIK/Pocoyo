@@ -78,6 +78,21 @@ public class CfgManager {
             }
             rootJson.add("hud", hudJson);
 
+            JsonObject themeJson = new JsonObject();
+            if (PocoyoVisual.INSTANCE != null && PocoyoVisual.INSTANCE.getThemeManager() != null) {
+                ThemeManager.ThemePreset currentTheme = PocoyoVisual.INSTANCE.getThemeManager().getCurrentPreset();
+                if (currentTheme != null) {
+                    themeJson.addProperty("name", currentTheme.name);
+                }
+            }
+            rootJson.add("theme", themeJson);
+
+            JsonObject commandJson = new JsonObject();
+            if (PocoyoVisual.INSTANCE != null && PocoyoVisual.INSTANCE.getCommandManager() != null) {
+                commandJson.addProperty("prefix", PocoyoVisual.INSTANCE.getCommandManager().getCommandPrefix());
+            }
+            rootJson.add("command", commandJson);
+
             try (FileWriter writer = new FileWriter(configFile)) {
                 gson.toJson(rootJson, writer);
             }
@@ -139,6 +154,27 @@ public class CfgManager {
                     if (compJson.has("y")) component.setY(compJson.get("y").getAsInt());
                     if (compJson.has("alpha")) component.setAlpha(compJson.get("alpha").getAsFloat());
                     if (compJson.has("scale")) component.setScale(compJson.get("scale").getAsFloat());
+                }
+            }
+
+            if (rootJson.has("theme") && PocoyoVisual.INSTANCE != null && PocoyoVisual.INSTANCE.getThemeManager() != null) {
+                JsonObject themeJson = rootJson.getAsJsonObject("theme");
+                if (themeJson.has("name")) {
+                    String themeName = themeJson.get("name").getAsString();
+                    for (ThemeManager.ThemePreset preset : PocoyoVisual.INSTANCE.getThemeManager().getPresets()) {
+                        if (preset.name.equals(themeName)) {
+                            PocoyoVisual.INSTANCE.getThemeManager().setCurrentPreset(preset);
+                            break;
+                        }
+                    }
+                }
+            }
+
+            if (rootJson.has("command") && PocoyoVisual.INSTANCE != null && PocoyoVisual.INSTANCE.getCommandManager() != null) {
+                JsonObject commandJson = rootJson.getAsJsonObject("command");
+                if (commandJson.has("prefix")) {
+                    String prefix = commandJson.get("prefix").getAsString();
+                    PocoyoVisual.INSTANCE.getCommandManager().setCommandPrefix(prefix);
                 }
             }
         } catch (Exception e) {

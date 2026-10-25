@@ -4,15 +4,17 @@
   "package": "main.mixin",
   "compatibilityLevel": "JAVA_21",
   "client": [
+    "AbstractClientPlayerEntityMixin",
+    "ChatScreenMixin",
     "ClientPlayerInteractionManagerMixin",
     "EntityRendererMixin",
     "InGameHudMixin",
     "KeyboardMixin",
     "PlayerEntityMixin",
-    "PlayerEntityRendererMixin",
     "PlayerListEntryMixin",
     "PlayerListHudMixin",
-    "TestMixin"
+    "TestMixin",
+    "WorldMixin"
   ],
   "injectors": {
     "defaultRequire": 1

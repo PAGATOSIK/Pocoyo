@@ -2,6 +2,7 @@ package main.client.manager;
 
 import main.client.module.Module;
 import main.client.modules.game.Fullbright;
+import main.client.modules.game.WorldTime;
 import main.client.modules.visual.*;
 
 import java.util.ArrayList;
@@ -18,6 +19,9 @@ public class ModuleManager {
         register(new TargetEsp());
         register(new Radius());
         register(new Fullbright());
+        register(new Cape());
+        register(new JumpCircle());
+        register(new WorldTime());
 
         Particle particle = new Particle();
         particle.setToggled(true);

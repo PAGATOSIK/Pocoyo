@@ -1,8 +1,9 @@
 package main.client.modules.visual;
 
+import main.client.PocoyoVisual;
 import main.client.module.Category;
 import main.client.module.Module;
-import main.client.setting.ModeSetting; // ПРИМЕЧАНИЕ: В вашем клиенте это может называться EnumSetting или ListSetting
+import main.client.setting.ModeSetting;
 import main.client.setting.NumberSetting;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.Camera;
@@ -34,7 +35,7 @@ public class Particle extends Module {
     private final Random random = new Random();
 
     public Particle() {
-        super("Particle", Category.VISUAL);
+        super("Particle", Category.VISUAL, "создает частицы при атаке");
         addSettings(mode, amount, gravity);
     }
 
@@ -73,8 +74,13 @@ public class Particle extends Module {
 
         VertexConsumer buffer = vertexConsumers.getBuffer(RenderLayer.getEntityTranslucent(selectedTexture));
 
+        int effectColor = PocoyoVisual.INSTANCE.getThemeManager().getEffectColor();
+        int r = (effectColor >> 16) & 0xFF;
+        int g = (effectColor >> 8) & 0xFF;
+        int b = effectColor & 0xFF;
+
         for (CustomParticle particle : particles) {
-            particle.render(matrices, buffer, camera, camPos, partialTicks);
+            particle.render(matrices, buffer, camera, camPos, partialTicks, r, g, b);
         }
     }
 
@@ -130,7 +136,7 @@ public class Particle extends Module {
             return life <= 0;
         }
 
-        public void render(MatrixStack matrices, VertexConsumer buffer, Camera camera, Vec3d camPos, float partialTicks) {
+        public void render(MatrixStack matrices, VertexConsumer buffer, Camera camera, Vec3d camPos, float partialTicks, int r, int g, int b) {
             double renderX = MathHelper.lerp(partialTicks, prevX, x);
             double renderY = MathHelper.lerp(partialTicks, prevY, y);
             double renderZ = MathHelper.lerp(partialTicks, prevZ, z);
@@ -150,17 +156,17 @@ public class Particle extends Module {
             Matrix4f matrix = matrices.peek().getPositionMatrix();
             int alphaInt = (int) (alphaProgress * 255.0f);
 
-            drawVertex(buffer, matrix, -0.5f, -0.5f, 0.0f, 0.0f, 1.0f, alphaInt);
-            drawVertex(buffer, matrix, 0.5f, -0.5f, 0.0f, 1.0f, 1.0f, alphaInt);
-            drawVertex(buffer, matrix, 0.5f, 0.5f, 0.0f, 1.0f, 0.0f, alphaInt);
-            drawVertex(buffer, matrix, -0.5f, 0.5f, 0.0f, 0.0f, 0.0f, alphaInt);
+            drawVertex(buffer, matrix, -0.5f, -0.5f, 0.0f, 0.0f, 1.0f, r, g, b, alphaInt);
+            drawVertex(buffer, matrix, 0.5f, -0.5f, 0.0f, 1.0f, 1.0f, r, g, b, alphaInt);
+            drawVertex(buffer, matrix, 0.5f, 0.5f, 0.0f, 1.0f, 0.0f, r, g, b, alphaInt);
+            drawVertex(buffer, matrix, -0.5f, 0.5f, 0.0f, 0.0f, 0.0f, r, g, b, alphaInt);
 
             matrices.pop();
         }
 
-        private void drawVertex(VertexConsumer buffer, Matrix4f matrix, float x, float y, float z, float u, float v, int alpha) {
+        private void drawVertex(VertexConsumer buffer, Matrix4f matrix, float x, float y, float z, float u, float v, int r, int g, int b, int alpha) {
             buffer.vertex(matrix, x, y, z)
-                    .color(255, 255, 255, alpha)
+                    .color(r, g, b, alpha)
                     .texture(u, v)
                     .overlay(OverlayTexture.DEFAULT_UV)
                     .light(0xF000F0)

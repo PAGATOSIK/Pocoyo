@@ -9,9 +9,11 @@ import net.minecraft.util.ActionResult;
 
 import main.client.manager.*;
 import main.client.hud.HudManager;
+import main.client.manager.ComboManager;
 import main.client.module.Module;
 import main.client.modules.visual.TargetEsp;
 import main.client.modules.visual.Particle;
+import main.client.modules.visual.JumpCircle;
 
 public class PocoyoVisual implements ClientModInitializer {
     public static PocoyoVisual INSTANCE;
@@ -28,6 +30,7 @@ public class PocoyoVisual implements ClientModInitializer {
     private FontManager fontManager;
     private HudManager hudManager;
     private ThemeManager themeManager;
+    private CommandManager commandManager;
 
     @Override
     public void onInitializeClient() {
@@ -47,6 +50,8 @@ public class PocoyoVisual implements ClientModInitializer {
                     if (particle != null && particle.isToggled()) {
                         particle.onAttack(entity);
                     }
+                    // Обновляем combo при попадании
+                    ComboManager.getInstance().onHit();
                 }
             } catch (Exception e) {
                 e.printStackTrace();
@@ -120,6 +125,11 @@ public class PocoyoVisual implements ClientModInitializer {
                     float tickDelta = net.minecraft.client.MinecraftClient.getInstance().getRenderTickCounter().getTickProgress(true);
                     particle.render(context.matrixStack(), context.consumers(), tickDelta);
                 }
+                JumpCircle jumpCircle = getJumpCircle();
+                if (jumpCircle != null && jumpCircle.isToggled()) {
+                    float tickDelta = net.minecraft.client.MinecraftClient.getInstance().getRenderTickCounter().getTickProgress(true);
+                    jumpCircle.render(context.matrixStack(), context.consumers(), tickDelta);
+                }
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -152,6 +162,16 @@ public class PocoyoVisual implements ClientModInitializer {
         return null;
     }
 
+    private JumpCircle getJumpCircle() {
+        if (moduleManager == null || moduleManager.getModules() == null) return null;
+        for (Module m : moduleManager.getModules()) {
+            if (m instanceof JumpCircle) {
+                return (JumpCircle) m;
+            }
+        }
+        return null;
+    }
+
     public void init() {
         this.eventManager = new EventManager();
         this.fontManager = new FontManager();
@@ -159,6 +179,7 @@ public class PocoyoVisual implements ClientModInitializer {
         this.moduleManager = new ModuleManager();
         this.hudManager = new HudManager();
         this.cfgManager = new CfgManager(); // Инициализация CfgManager
+        this.commandManager = new CommandManager(); // Инициализация CommandManager
 
         this.moduleManager.init();
         this.hudManager.init();
@@ -177,4 +198,5 @@ public class PocoyoVisual implements ClientModInitializer {
     public FontManager getFontManager() { return fontManager; }
     public HudManager getHudManager() { return hudManager; }
     public ThemeManager getThemeManager() { return themeManager; }
+    public CommandManager getCommandManager() { return commandManager; }
 }

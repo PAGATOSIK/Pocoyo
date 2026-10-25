@@ -1,6 +1,8 @@
 package main.client.hud;
 
 import main.client.hud.renderer.ArrayListRenderer;
+import main.client.hud.renderer.ComboRenderer;
+import main.client.hud.renderer.EffectListRenderer;
 import main.client.hud.renderer.TargetHudRenderer;
 import main.client.hud.renderer.WatermarkRenderer;
 import net.minecraft.client.gui.DrawContext;
@@ -14,6 +16,8 @@ public class HudManager {
     public void init() {
         // Регистрируем компоненты (передаем дефолтные X и Y координаты)
         components.add(new WatermarkRenderer(4, 4));
+        components.add(new EffectListRenderer(4, 30));
+        components.add(new ComboRenderer(4, 54));
         components.add(new ArrayListRenderer(0, 4)); // X для ArrayList посчитаем динамически внутри
         components.add(new TargetHudRenderer(0, 128));
     }

@@ -5,15 +5,21 @@ import main.client.hud.HudComponent;
 import main.client.render.RoundedUtils;
 import main.client.render.UiText;
 import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.gl.RenderPipelines;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.PlayerSkinDrawer;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.mob.ZombieEntity;
+import net.minecraft.entity.passive.SheepEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.math.MathHelper;
 
 public class TargetHudRenderer extends HudComponent {
 
     private static final int BASE_BACKGROUND_COLOR = 0x00141414;
+    private static final Identifier ZOMBIE_TEXTURE = Identifier.of("pocou", "texture/targethud/zombie.png");
+    private static final Identifier SHEEP_TEXTURE = Identifier.of("pocou", "texture/targethud/sheep.png");
 
     private float animatedHealth = 0f;
     private LivingEntity lastTarget = null;
@@ -88,7 +94,18 @@ public class TargetHudRenderer extends HudComponent {
                 var skinTextures = mc.getSkinProvider().getSkinTextures(player.getGameProfile());
                 PlayerSkinDrawer.draw(context, skinTextures, headX, headY, headSize);
             } else {
-                RoundedUtils.drawRoundRect(context, headX, headY, headSize, headSize, 4, moduleBgColor);
+                Identifier mobTexture = null;
+                if (targetToRender instanceof ZombieEntity) {
+                    mobTexture = ZOMBIE_TEXTURE;
+                } else if (targetToRender instanceof SheepEntity) {
+                    mobTexture = SHEEP_TEXTURE;
+                }
+
+                if (mobTexture != null) {
+                    drawMobTexture(context, mobTexture, headX, headY, headSize, combinedAlpha);
+                } else {
+                    RoundedUtils.drawRoundRect(context, headX, headY, headSize, headSize, 4, moduleBgColor);
+                }
             }
 
             int textX = headX + headSize + 8;
@@ -140,4 +157,14 @@ public class TargetHudRenderer extends HudComponent {
     public int getEditorWidth() { return (int) (155 * getScale()); }
     @Override
     public int getEditorHeight() { return (int) (42 * getScale()); }
+
+    private void drawMobTexture(DrawContext context, Identifier texture, int x, int y, int size, float alpha) {
+        context.drawTexture(
+                RenderPipelines.GUI_TEXTURED,
+                texture,
+                x, y,
+                0.0F, 0.0F,
+                size, size, size, size
+        );
+    }
 }

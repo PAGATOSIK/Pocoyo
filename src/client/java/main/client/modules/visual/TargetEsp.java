@@ -1,5 +1,6 @@
 package main.client.modules.visual;
 
+import main.client.PocoyoVisual;
 import main.client.module.Category;
 import main.client.module.Module;
 import net.minecraft.client.MinecraftClient;
@@ -26,7 +27,7 @@ public class TargetEsp extends Module {
     private float animProgress = 0.0F;
 
     public TargetEsp() {
-        super("Target ESP", Category.VISUAL);
+        super("Target ESP", Category.VISUAL, "отображает цель с эффектом вращения");
     }
 
     public void onAttack(Entity entity) {
@@ -100,20 +101,24 @@ public class TargetEsp extends Module {
 
         Matrix4f matrix = matrices.peek().getPositionMatrix();
         int alpha = (int) (animProgress * 255.0F);
+        int effectColor = PocoyoVisual.INSTANCE.getThemeManager().getEffectColor();
+        int r = (effectColor >> 16) & 0xFF;
+        int g = (effectColor >> 8) & 0xFF;
+        int b = effectColor & 0xFF;
 
         VertexConsumer buffer = consumers.getBuffer(RenderLayer.getEntityTranslucent(TARGET_TEXTURE));
 
-        drawVertex(buffer, matrix, -0.5F, -0.5F, 0.0F, 0.0F, 1.0F, alpha);
-        drawVertex(buffer, matrix, 0.5F, -0.5F, 0.0F, 1.0F, 1.0F, alpha);
-        drawVertex(buffer, matrix, 0.5F, 0.5F, 0.0F, 1.0F, 0.0F, alpha);
-        drawVertex(buffer, matrix, -0.5F, 0.5F, 0.0F, 0.0F, 0.0F, alpha);
+        drawVertex(buffer, matrix, -0.5F, -0.5F, 0.0F, 0.0F, 1.0F, r, g, b, alpha);
+        drawVertex(buffer, matrix, 0.5F, -0.5F, 0.0F, 1.0F, 1.0F, r, g, b, alpha);
+        drawVertex(buffer, matrix, 0.5F, 0.5F, 0.0F, 1.0F, 0.0F, r, g, b, alpha);
+        drawVertex(buffer, matrix, -0.5F, 0.5F, 0.0F, 0.0F, 0.0F, r, g, b, alpha);
 
         matrices.pop();
     }
 
-    private void drawVertex(VertexConsumer buffer, Matrix4f matrix, float x, float y, float z, float u, float v, int alpha) {
+    private void drawVertex(VertexConsumer buffer, Matrix4f matrix, float x, float y, float z, float u, float v, int r, int g, int b, int alpha) {
         buffer.vertex(matrix, x, y, z)
-                .color(255, 255, 255, alpha)
+                .color(r, g, b, alpha)
                 .texture(u, v)
                 .overlay(OverlayTexture.DEFAULT_UV)
                 .light(0xF000F0)

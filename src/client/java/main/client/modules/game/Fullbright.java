@@ -9,7 +9,7 @@ import net.minecraft.entity.effect.StatusEffects;
 public class Fullbright extends Module {
 
     public Fullbright() {
-        super("Fullbright", Category.GAME);
+        super("Fullbright", Category.GAME, "делает мир максимально ярким");
     }
 
     public void onTick() {

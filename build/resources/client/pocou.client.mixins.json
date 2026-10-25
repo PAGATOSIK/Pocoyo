@@ -1,0 +1,27 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "main.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "AbstractClientPlayerEntityMixin",
+    "ChatScreenMixin",
+    "ClientPlayerInteractionManagerMixin",
+    "EntityRendererMixin",
+    "InGameHudMixin",
+    "KeyboardMixin",
+    "PlayerEntityMixin",
+    "PlayerListEntryMixin",
+    "PlayerListHudMixin",
+    "TestMixin",
+    "WorldMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  },
+  "mixins": [
+  ]
+}

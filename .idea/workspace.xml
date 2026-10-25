@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f3f2cd80-ec0b-49b3-8169-2bd0ae1bf1c4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/PocoyoVisual.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deepseek-sessions.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deepseek-sessions.json.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/PocoyoVisual.client.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/PocoyoVisual.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/PocoyoVisual.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/Data_Generation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/Minecraft_Client.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/Minecraft_Server.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/PocoyoVisual.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/animation/Animation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/animation/DecelerateAnimation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/animation/EaseOutAnimation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/gui/ClickGuiScreen.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/gui/HudEditorScreen.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/hud/DragManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/hud/HudComponent.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/hud/HudElement.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/hud/HudManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/hud/HudRenderer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/hud/renderer/ArrayListRenderer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/hud/renderer/ComboRenderer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/hud/renderer/EffectListRenderer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/hud/renderer/TargetHudRenderer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/hud/renderer/WatermarkRenderer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/mainDataGenerator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/manager/CfgManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/manager/ComboManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/manager/CommandManager$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/manager/CommandManager$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/manager/CommandManager$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/manager/CommandManager$Command.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/manager/CommandManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/manager/ConfigManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/manager/EventManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/manager/FontManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/manager/ModuleManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/manager/ThemeManager$EffectColorPreset.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/manager/ThemeManager$ThemePreset.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/manager/ThemeManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/module/Category.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/module/Module.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/modules/game/Fullbright.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/modules/game/WorldTime.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/modules/visual/Cape.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/modules/visual/Hud.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/modules/visual/JumpCircle$CircleEffect.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/modules/visual/JumpCircle.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/modules/visual/Particle$CustomParticle.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/modules/visual/Particle.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/modules/visual/Radius.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/modules/visual/TargetEsp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/render/BlurRenderer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/render/CircleMode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/render/Render2D.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/render/RenderUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/render/RoundedUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/render/Scissor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/render/ShadowRenderer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/render/UiText.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/render/VertexSink.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/setting/BooleanSetting.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/setting/ColorSetting.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/setting/KeybindSetting.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/setting/ModeSetting.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/setting/NumberSetting.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/setting/Setting.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/util/ColorUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/util/MathUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/util/MouseUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/client/util/VisualUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/mixin/AbstractClientPlayerEntityMixin.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/mixin/CapeFeatureRendererMixin.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/mixin/ChatScreenMixin.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/mixin/ClientPlayerInteractionManagerMixin.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/mixin/EntityRendererMixin.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/mixin/InGameHudMixin.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/mixin/KeyboardMixin.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/mixin/LivingEntityMixin.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/mixin/MouseScrollMixin.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/mixin/PlayerEntityMixin.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/mixin/PlayerEntityRendererMixin.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/mixin/PlayerListEntryMixin.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/mixin/PlayerListHudMixin.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/mixin/SoundSystemMixin.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/mixin/TestMixin.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/client/main/mixin/WorldMixin.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/main/PocoyoVisual.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/devlibs/pocoyovisual-67-dev.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/devlibs/pocoyovisual-67-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/pocoyovisual-67-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/pocoyovisual-67.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/reports/problems/problems-report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/client/pocou.client.mixins.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/pocou/font/sf-pro-text-11.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/pocou/font/sf-pro-text-11.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/pocou/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/pocou/lang/en_us.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/pocou/lang/ru_ru.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/pocou/texture/cape.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/pocou/texture/circle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/pocou/texture/heart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/pocou/texture/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/pocou/texture/star.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/pocou/texture/tabicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/pocou/texture/target.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/pocou/texture/targethud/sheep.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/pocou/texture/targethud/zombie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/fabric.mod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/pocou.mixins.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/compileClientJava/compileTransaction/stash-dir/ClickGuiScreen.class.uniqueId1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/compileClientJava/compileTransaction/stash-dir/HudRenderer.class.uniqueId2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/compileClientJava/compileTransaction/stash-dir/KeyboardMixin.class.uniqueId0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/compileClientJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/remapJar/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/remapSourcesJar/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/sourcesJar/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/PocoyoVisual/modules.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/command_history.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/config/fabric/indigo-renderer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/config/pocoyo/default.pocou" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2026-07-19_13.11.32-client.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2026-07-19_13.13.01-client.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2026-07-19_13.24.44-client.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2026-07-19_13.27.01-client.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2026-07-19_14.40.46-client.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2026-07-19_16.56.32-client.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2026-07-20_19.29.54-client.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2026-07-20_19.30.44-client.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2026-07-20_20.18.09-client.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2026-07-20_20.25.55-client.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2026-07-20_20.27.57-client.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2026-07-20_20.34.00-client.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2026-07-20_21.20.50-client.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2026-07-20_22.46.03-client.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2026-07-20_22.48.19-client.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2026-07-20_22.52.45-client.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2026-07-21_20.51.57-client.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2026-07-21_20.53.56-client.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2026-07-22_22.27.59-client.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/data/fabricDefaultResourcePacks.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/downloads/log.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-07-19-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-07-19-2.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-07-19-3.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-07-19-4.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-07-19-5.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-07-19-6.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-07-20-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-07-20-2.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-07-20-3.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-07-20-4.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-07-20-5.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-07-20-6.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-07-21-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-07-21-2.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-07-21-3.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-07-21-4.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-07-21-5.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-07-21-6.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-07-22-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-07-22-2.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-07-22-3.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-07-22-4.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-07-22-5.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-07-22-6.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-10-16-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-10-16-2.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-10-16-3.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-10-17-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-10-17-2.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-10-17-3.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-10-17-4.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-10-17-5.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-10-17-6.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-10-18-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-10-18-2.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-10-18-3.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-10-18-4.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-10-18-5.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-10-18-6.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-10-19-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-10-22-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-10-22-2.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-10-22-3.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-10-22-4.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-10-22-5.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-10-22-6.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-10-23-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-10-23-2.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-10-23-3.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-10-23-4.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-10-23-5.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-10-23-6.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-10-24-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-10-24-2.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-10-24-3.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-10-24-4.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-10-24-5.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-10-24-6.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-10-25-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-10-25-2.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-10-25-3.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-10-25-4.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-10-25-5.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-10-25-6.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2026-10-25-7.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/debug-2.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/debug-3.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/debug-4.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/debug-5.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/debug.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/options.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/screenshots/2026-10-22_20.38.30.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/screenshots/2026-10-22_20.38.45.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/servers.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/servers.dat_old" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/java/main/client/gui/ClickGuiScreen_theme_buttons.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/java/main/client/hud/renderer/ComboRenderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/java/main/client/hud/renderer/EffectListRenderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/java/main/client/manager/ComboManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/java/main/client/manager/CommandManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/java/main/client/modules/game/WorldTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/java/main/client/modules/visual/Cape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/java/main/mixin/AbstractClientPlayerEntityMixin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/java/main/mixin/CapeFeatureRendererMixin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/java/main/mixin/ChatScreenMixin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/java/main/mixin/WorldMixin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/9.6.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.6.1/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/9.6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/9.6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/9.6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/9.6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/9.6.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.6.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/java/main/client/PocoyoVisual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/java/main/client/PocoyoVisual.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/java/main/client/gui/ClickGuiScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/java/main/client/gui/ClickGuiScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/java/main/client/hud/HudManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/java/main/client/hud/HudManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/java/main/client/hud/renderer/TargetHudRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/java/main/client/hud/renderer/TargetHudRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/java/main/client/manager/CfgManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/java/main/client/manager/CfgManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/java/main/client/manager/ModuleManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/java/main/client/manager/ModuleManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/java/main/client/manager/ThemeManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/java/main/client/manager/ThemeManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/java/main/client/module/Module.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/java/main/client/module/Module.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/java/main/client/modules/game/Fullbright.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/java/main/client/modules/game/Fullbright.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/java/main/client/modules/visual/Hud.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/java/main/client/modules/visual/Hud.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/java/main/client/modules/visual/JumpCircle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/java/main/client/modules/visual/JumpCircle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/java/main/client/modules/visual/Particle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/java/main/client/modules/visual/Particle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/java/main/client/modules/visual/Radius.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/java/main/client/modules/visual/Radius.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/java/main/client/modules/visual/TargetEsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/java/main/client/modules/visual/TargetEsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/java/main/client/render/Render2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/java/main/client/render/Render2D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/java/main/client/render/RoundedUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/java/main/client/render/RoundedUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/java/main/mixin/EntityRendererMixin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/java/main/mixin/EntityRendererMixin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/java/main/mixin/PlayerEntityRendererMixin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/java/main/mixin/PlayerEntityRendererMixin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/resources/pocou.client.mixins.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/resources/pocou.client.mixins.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/pocou/texture/targethud/zombie.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/pocou/texture/targethud/zombie.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fabric.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fabric.mod.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="C:\Users\PAGATOSIK\Desktop\PocoyoVisual">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PocoyoVisual" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PocoyoVisual" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PocoyoVisual" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="3GiUYiGlWhrDjX6QdWwvePAK4Sp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.C:/Users/PAGATOSIK/Desktop/PocoyoVisual [wrapper].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.PocoyoVisual [:net.fabricmc.devlaunchinjector.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.PocoyoVisual [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.PocoyoVisual [runClient].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/pagatosik/Загрузки/steam_latest/PocoyoVisual/src/main/resources/assets/pocou/texture/targethud&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="main.client.setting" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/assets/pocou/texture/targethud" />
+      <recent name="$PROJECT_DIR$/src/main/resources/assets/pocou/texture" />
+      <recent name="C:\Users\PAGATOSIK\Desktop\PocoyoVisual\src\main\resources\assets\pocou\texture" />
+      <recent name="C:\Users\PAGATOSIK\Desktop\PocoyoVisual\src\main\resources\assets\pocou\font" />
+      <recent name="C:\Users\PAGATOSIK\Desktop\PocoyoVisual\src\main\resources\assets\pocou\lang" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\PAGATOSIK\Desktop\PocoyoVisual\src\main\resources\assets\pocou\texture" />
+      <recent name="C:\Users\PAGATOSIK\Desktop\PocoyoVisual\src\main\resources\assets\pocou\font" />
+      <recent name="C:\Users\PAGATOSIK\Desktop\PocoyoVisual\src\client\java\main\mixin" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Minecraft Client">
+    <configuration name="Build" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" value="Build" />
+        <option name="externalProjectPath" value="C:\Users\PAGATOSIK\Desktop\PocoyoVisual" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="PocoyoVisual [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="PocoyoVisual [runClient]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="runClient" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="mcdev-temp-root" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="mcdev-temp-root" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Minecraft Client" />
+      <item itemvalue="Application.Data Generation" />
+      <item itemvalue="Application.Minecraft Server" />
+      <item itemvalue="Gradle.Build" />
+      <item itemvalue="Gradle.PocoyoVisual [build]" />
+      <item itemvalue="Gradle.PocoyoVisual [runClient]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.PocoyoVisual [build]" />
+        <item itemvalue="Gradle.PocoyoVisual [runClient]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f3f2cd80-ec0b-49b3-8169-2bd0ae1bf1c4" name="Changes" comment="" />
+      <created>1784453934637</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1784453934637</updated>
+    </task>
+    <servers />
+  </component>
+</project>
