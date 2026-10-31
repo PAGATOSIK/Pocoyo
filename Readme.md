@@ -40,6 +40,32 @@ Before installing, make sure you have the following installed:
 
 ---
 
+## Changelog
+
+### Version 0.3
+* **Bug Fixes**:
+  * Fixed Cape module rendering to properly display custom cape texture
+  * Fixed JumpCircle module texture path and rendering
+  * Fixed rounded element anti-aliasing (AA_SAMPLES) for smoother visuals
+  * Fixed ClickGUI theme buttons becoming unclickable after scrolling
+  * Fixed HUD renderers to consistently use theme colors
+* **New Features**:
+  * Added WorldTime module for visual time manipulation
+  * Added Combo counter with animated HUD display
+  * Added EffectListRenderer for potion effects display
+  * Merged theme and effect color selections into unified Theme category
+  * Redesigned ClickGUI with improved layout and styling
+* **Improvements**:
+  * Performance optimizations for GUI rendering
+  * Enhanced theme system with separate interface and effect colors
+  * Improved scissor clipping for theme section
+  * Better scroll offset handling in ClickGUI
+
+### Version 0.2
+* Initial release with basic visual modules and HUD system
+
+---
+
 ##  Installation
 
 1. Download and install [Fabric Loader](https://fabricmc.net/use/) for Minecraft **1.21.8**.
